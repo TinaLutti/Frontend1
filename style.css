@@ -1,0 +1,357 @@
+/* Media queries för olika skärmstorlekar */
+@media (min-width: 767px) {
+    /* Stilar för skärmar med minst 767px bredd */
+}
+
+@media (min-width: 1024px) {
+    /* Stil för skärmar med minst 1024px bredd */
+}
+
+/* Media query för mindre skärmar */
+@media (max-width: 767px) {
+    /* Justera stilar för mindre skärmar */
+    li.about {
+        margin-left: -30px; /* Justera marginalen för mindre skärmar */
+        font-size: 14px; /* Justera textstorleken för mindre skärmar */
+    }
+    li.services {
+        margin-left: -30px; /* Justera marginalen för mindre skärmar */
+        font-size: 14px; /* Justera textstorleken för mindre skärmar */
+    }
+}
+
+/* Grundstil för hela sidan */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f2f2f2, #f4f2ee);
+}
+
+/* Stil för logotyp och navigationsmeny */
+.logo-container {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    color: #181817;
+    background-color: #f4f2ee;
+}
+
+/* Styling för logotypen */
+.logo {
+    height: 30px;
+    color: #181817;
+    background-color: #f4f2ee;
+}
+
+/* Textstil för logotypens text */
+.brand-text {
+    margin-left: 10px; /* Justera avståndet mellan logotyp och text efter behov */
+    font-weight: bold;
+}
+
+/* Grundstil för Om oss-länken */
+.about {
+    margin-left: 20px; /* Justera marginalen efter behov */
+}
+
+/* Styling navigationsmenyn */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f4f2ee;
+    padding: 0;
+}
+
+/* Styling navigationslistan */
+ul.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 0.8em;
+    flex-grow: 1;
+    flex-wrap: nowrap; /* Lägg till detta för att hindra brytning på mindre skärmar */
+}
+
+/* Gemensam styling för "Services" och "About" listelementen */
+li.services,
+li.about {
+    color: grey;
+    cursor: pointer;
+    text-decoration: none; /* Ta bort understrykningen */
+    font-family: sans-serif;
+}
+
+/* Stil för "About/ om oss" listelementet */
+li.about {
+    padding: 0;
+    white-space: nowrap; /* Hindra texten från att brytas till nästa rad */
+}
+
+/* Stil för länkar */
+a {
+    color: #181817; /* Mörkgrå färg för länkar */
+}
+
+a:link {
+    text-decoration: none;
+    padding: 14px 25px;
+}
+
+/* Hover-stil för länkar */
+a:hover {
+    color: grey;
+}
+
+/* Header-stil */
+header {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, #F5F5F5, #EFF5EF);
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #1e1e1e;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Rubrikstil */
+h2 {
+    font-family: Arial, sans-serif;
+    color: #1e1e1e;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+h3 {
+    font-family: Arial, sans-serif;
+    color: #1e1e1e;
+    font-weight: 400;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Paragrafstil */
+p {
+    font-family: Arial, sans-serif;
+    color: #1e1e1e;
+    max-width: 800px;
+    text-align: justify;
+    margin-left: 20%;
+    display: inline-block;
+    word-spacing: 2px;
+}
+
+/* Formulärstil */
+.form-paragraph {
+    margin-left: 35%;
+}
+
+/* Stil för listelement */
+li {
+    padding: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Unordered list-stil */
+ul {
+    font-family: Arial, sans-serif;
+    color: #1e1e1e;
+}
+
+/* Formulärs-stil för Kontakta oss */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px; /* Justera toppmarginalen för att placera formuläret högre upp */
+    margin-bottom: 2px; /* Justera bottenmarginalen  */
+    font-family: Arial, sans-serif;
+    color: #333; /* Ändra textfärg */
+}
+
+/* Kontaktformulär-stil */
+#contactForm {
+    text-align: left;
+    width: 30%; /* Justerar bredden */
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #F5F5F5, #ffff);
+}
+
+/* Stil för label, input och textarea i kontaktformuläret */
+#contactForm label,
+#contactForm input,
+#contactForm textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%; /* Gör input-fälten 100% av förälderns bredd */
+}
+
+/* Stil för dropdown-menyn */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Stil för ikonen bredvid dropdown-menyn */
+.cleaning-icon {
+    width: 25px;
+    height: auto;
+    margin-right: 10px; /* Justera avståndet mellan ikon och text efter behov */
+}
+
+/* Stil för dropdown-innehållet */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    padding: 30px;
+    line-height: 200%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: #ddd; /* Bakgrundsfärg för dropdown */
+}
+
+/* Hover-stil för dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #ddd; /* Bakgrundsfärg för dropdown vid hover */
+}
+
+/* Stil för "Om oss" */
+.about {
+    margin-left: 20px; /* Justera marginalen efter behov */
+}
+
+/* Stil för navigationslänkar vid hover */
+.navigation {
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 14px 25px;
+    color: #181817;
+    transition: background-color 0.3s ease; /* Övergångseffekt för bakgrundsfärg vid hover */
+}
+
+.navigation a:hover {
+    color: black;
+    background-color: #ddd; /* Bakgrundsfärg vid hover */
+}
+
+/* Stil för rubrik och lista */
+.general-heading {
+    cursor: pointer;
+    color: #1e1e1e;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Stil för container och sektioner */
+.container {
+    display: flex;
+    margin-left: 200px; /* Detta skjuter containern åt höger */
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+}
+
+/* Stil för klickbar container */
+.clickable-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Stil för generella listelement på tjänster-sidan */
+.general-list {
+    display: none; /* Listan är dold från början */
+    list-style-type: none;
+    padding: 2%;
+    margin: 2%;
+}
+
+/* Stil för generella listelement på tjänster-sidan och dess container */
+.general {
+    cursor: pointer;
+    color: #1e1e1e;
+    font-weight: 400;
+    text-align: left; /* Justera text till vänster */
+    margin-left: 20%;
+    margin-bottom: 5px; /* Lägg till utrymme mellan rubrik och lista */
+    display: flex; /* Visa på samma rad som pilen */
+    align-items: center; /* Centrera vertikalt med pilen */
+}
+
+/* Hover-stil för generella listelement (pilar) */
+.general:hover,
+.general-list:hover {
+    cursor: pointer;
+}
+
+/* stil för pil hover-effekt */
+.caret-img:hover {
+    cursor: pointer;
+}
+
+/* Stil för popup-fönstret */
+.custom-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, #F5F5F5, #EFF5EF);
+    border: 1px solid #ccc;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Se till att popup ligger över andra element */
+}
+
+/* Stil för popup-innehållet */
+.popup-content {
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Stil för rubrik i popup-innehållet */
+.popup-content h2 {
+    color: #0d0d0d;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Stil för text i popup-innehållet */
+.popup-content p {
+    font-size: 16px; /* Storlek på text */
+    line-height: 1.5; /* Radhöjd för bättre läsbarhet */
+    color: #1e1e1e; /* Färg för vanlig text */
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+/* Stil för stäng-knappen */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #1e1e1e;
+}
+
+/* Hover-stil för stäng-knappen */
+.close:hover {
+    color: #000;
+}

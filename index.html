@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Hemstäd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+<nav>
+    <div class="logo-container">
+        <img src="images/4737439_architecture_building_home_house_property_icon.svg" alt="logo hus" class="logo">
+        <div class="brand-text"><a href="index.html">Hemstäd</a></div>
+    </div>
+
+    <ul class="navigation">
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Tjänster</a>
+            <div class="dropdown-content">
+                <a href="services.html#service1"><img src="images/wipe.png" alt="Hemstädning" class="cleaning-icon">Hemstädning</a>
+                <a href="services.html#service2"><img src="images/house.png" alt="Storstädning" class="cleaning-icon">Storstädning</a>
+                <a href="services.html#service3"><img src ="images/window.png" alt="Fönsterputs" class="cleaning-icon">Fönsterputs</a>
+                <a href="services.html#service4"><img src ="images/boxes.png" alt="Flyttstädning" class="cleaning-icon">Flyttstädning</a>
+            </div>
+        </li>
+        <li class="about"><a href="about.html">Om oss</a></li>
+    </ul>
+</nav>
+
+
+<header>
+    <h1>Hemstäd för en enklare vardag</h1>
+</header>
+
+<h2>Välkommen till Hemstäd – Din Partner för Enklare Vardagar</h2>
+<p>
+    När du väljer Hemstäd som din partner för enklare vardagar, kan du förvänta dig en överlägsen upplevelse av service och professionalism. Vi förstår att ditt hem är din fristad, och vi strävar efter att göra den upplevelsen ännu mer exceptionell genom att ta hand om de små detaljerna som gör den stora skillnaden.
+</p>
+
+<p>
+    Vår passion ligger i att erbjuda städtjänster för att underlätta din vardag. Vi förstår att varje hem är unikt, och därför strävar vi efter att skräddarsy våra städlösningar för att harmonisera med just din livsstil. Vi förstår vi vikten av att anpassa våra tjänster för att matcha dina specifika behov och önskemål.
+</p>
+
+<p>
+    Vårt dedikerade team av professionella städare är inte bara experter inom sitt område, utan de skapar även den där extra touchen av elegans och lyx som gör skillnaden. Varje yta behandlas med omsorg, varje detalj får uppmärksamhet.
+</p>
+
+<p>
+    Vare sig det är en regelbunden städning, specialbehandling för dina mest värdefulla möbler eller en engångstjänst inför en speciell händelse, är Hemstäd här för att överträffa dina förväntningar och skapa en vardag som inte bara är enklare utan också elegant och lyxig. Välkommen till Hemstäd, där varje städning är en konstform och varje hem berättar sin egen unika historia av renhet och komfort.
+</p>
+
+
+<h3>Hemstäd -mer tid för annat</h3>
+<ul>
+    <li>Trygghet: Våra erfarna städare skapar en pålitlig och personlig relation med varje kund. Samma städare kommer till ditt hem varje gång, vilket ger kontinuitet och förståelse för dina specifika behov.</li>
+    <li>Säkerhet: Vi prioriterar din trygghet. Hemstäd är försäkrat, och våra anställda följer strikta sekretessavtal samt svenska stöldskyddsföreningens nyckelrutiner.</li>
+    <li>Enkelhet: Vi förenklar din tillvaro. Med Rut-avdraget på fakturan hanterar vi administrationen med Skatteverket, vilket ger dig trygghet och gör ditt städärende bekymmersfritt.</li>
+</ul>
+
+<h3>Hur fungerar det?</h3>
+<p>Utforska våra tjänster, inklusive regelbunden hemstädning, storstädning, fönsterputsning och flyttstädning. Vi ger dig kontrollen över städningen, så du kan anpassa tjänsterna efter dina behov och önskemål.
+    Låt Hemstäd göra din vardag enklare och ditt hem skinande rent. Vi är här för dig!
+</p>
+
+<p class="form-paragraph"> Kontakta oss idag för att boka din första städning:</p>
+<div class="form">
+    <form id="contactForm">
+        <label for="firstName">Förnamn:</label>
+        <input type="text" id="firstName" autocomplete="given-name" required>
+
+        <label for="lastName">Efternamn:</label>
+        <input type="text" id="lastName" autocomplete="family-name" required>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" autocomplete="email" required>
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="number" id="phone" autocomplete="tel" required>
+
+        <label for="message">Meddelande:</label>
+        <textarea id="message" rows="4" autocomplete="off" required></textarea>
+
+        <button type="button" onclick="submitForm()">Skicka</button>
+    </form>
+</div>
+
+
+<div id="customPopup" class="custom-popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeCustomPopup()">&times;</span>
+        <h2>Tack för ditt meddelande</h2>
+        <p class="popup-text">Vi kommer snart kontakta dig.</p>
+    </div>
+</div>
+
+</body>
+</html>

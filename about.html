@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Om oss</title>
+    <link rel="index" href="index.html">
+    <link rel="about" href="about.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+<nav>
+    <div class="logo-container">
+        <img src="images/4737439_architecture_building_home_house_property_icon.svg" alt="logo hus" class="logo">
+        <div class="brand-text"><a href="index.html">Hemstäd</a></div>
+    </div>
+
+    <ul class="navigation">
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Tjänster</a>
+            <div class="dropdown-content">
+                <a href="services.html#service1"><img src="images/wipe.png" alt="Hemstädning" class="cleaning-icon">Hemstädning</a>
+                <a href="services.html#service2"><img src="images/house.png" alt="Storstädning" class="cleaning-icon">Storstädning</a>
+                <a href="services.html#service3"><img src ="images/window.png" alt="Fönsterputs" class="cleaning-icon">Fönsterputs</a>
+                <a href="services.html#service4"><img src ="images/boxes.png" alt="Flyttstädning" class="cleaning-icon">Flyttstädning</a>
+            </div>
+        </li>
+        <li class="about"><a href="about.html">Om oss</a></li>
+    </ul>
+
+</nav>
+
+
+<header>
+    <h1>Hemstäd för en enklare vardag</h1>
+</header>
+
+<h2>Välkommen till Hemstäd - Din Partner för Enklare Vardagar</h2>
+<p>
+    Vi på Hemstäd är dedikerade till att göra din vardag lite enklare och mycket renare. Vi förstår att ett rent och välskött hem skapar en plats för harmoni och välbefinnande, och det är där vi kommer in.
+    Med många års erfarenhet och en passion för service strävar vi efter att erbjuda en överlägsen städupplevelse som går utöver det förväntade.
+</p>
+
+<h2> Vår Vision: Renhet, Kvalitet och Trygghet</h2>
+<p>
+    Hemstäd grundades med visionen att erbjuda högkvalitativ städning som inte bara lämnar ditt hem skinande rent utan också skapar en känsla av lugn och trygghet.
+    Vi förstår att varje hem är unikt, och därför anpassar vi våra tjänster för att matcha dina specifika behov och önskemål.
+</p>
+<h2>Vår Service</h2>
+<p>
+    Oavsett om det är regelbunden hemstädning, storstädning, fönsterputsning eller flyttstädning, så är Hemstäd här för dig.
+    Vi ger dig kontroll över städningen så att du kan anpassa tjänsterna efter dina behov och önskemål.
+</p>
+
+
+
+<p class="form-paragraph"> Kontakta oss idag för att boka din första städning:</p>
+
+<div class="form">
+    <form id="contactForm">
+        <label for="firstName">Förnamn:</label>
+        <input type="text" id="firstName" autocomplete="given-name" required>
+
+        <label for="lastName">Efternamn:</label>
+        <input type="text" id="lastName" autocomplete="family-name" required>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" autocomplete="email" required>
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="number" id="phone" autocomplete="tel" required>
+
+        <label for="message">Meddelande:</label>
+        <textarea id="message" rows="4" autocomplete="off" required></textarea>
+
+        <button type="button" onclick="submitForm()">Skicka</button>
+    </form>
+</div>
+
+
+<div id="customPopup" class="custom-popup">
+    <div class="popup-content">
+        <span class="close" onclick="closeCustomPopup()">&times;</span>
+        <h2>Tack för ditt meddelande</h2>
+        <p class="popup-text">Vi kommer snart kontakta dig.</p>
+    </div>
+</div>
+
+</body>
+</html>
